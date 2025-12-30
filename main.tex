@@ -11,17 +11,17 @@
 \author[1,*]{First Author}
 % Add 20-40 authors representing diverse stakeholders as per successful extensions
 
-\begin{abstract}
 % This is a manuscript template for Data Descriptor submissions to \emph{Scientific Data} (\href{http://www.nature.com/scientificdata}{http://www.nature.com/scientificdata}). The abstract must be no longer than 170 words, and should succinctly describe the study, the assay(s) performed, the resulting data, and the reuse potential, but should not make any claims regarding new scientific findings. No references are allowed in this section.
 
 % Following Scientific Data format - 170 words max, no references
 % Pattern from Pernet2019, Niso2018, Holdgraf2019
+\begin{abstract}
 The Brain Imaging Data Structure (BIDS) has facilitated data sharing and tool development in human neuroimaging.
-We present an extension for microelectrode electrophysiology recordings in animal models, addressing the unique requirements of intracellular and extracellular recordings.
-This extension introduces two new data types: 'icephys' for intracellular and 'ecephys' for extracellular recordings, supporting diverse recording modalities from patch-clamp to high-density silicon probes.
-Building on existing BIDS principles and prior electrophysiology extensions, we specify metadata for probes, electrodes, and channels, with particular attention to metadata required for spike sorting analysis.
-The extension adopts NWB (Neurodata Without Borders) and NIX (Neuroscience Information Exchange) as data formats, ensuring comprehensive metadata capture while maintaining compatibility with existing analysis ecosystems.
-We provide example datasets covering common use cases and demonstrate integration with established tools including [Which tools?].
+We present an extension for microelectrode electrophysiology recordings, primarily in animal models, addressing the unique requirements of intracellular and extracellular recordings.
+This extension introduces two datatypes: `icephys' for intracellular and `ecephys' for extracellular recordings, supporting diverse recording modalities from patch-clamp to high-density silicon probes.
+Building on existing BIDS principles and prior electrophysiology extensions (EEG, MEG, iEEG), we specify metadata for probes, electrodes, and channels, with particular attention to probe geometry and stereotaxic surgical coordinates essential for reproducibility.
+The extension adopts NWB (Neurodata Without Borders) and NIX (Neuroscience Information Exchange) as data formats, bridging the gap between session-level data standardization and study-level organization.
+We provide example datasets and demonstrate integration with established tools including SpikeInterface and ProbeInterface.
 This standardization enables reproducible analysis pipelines, facilitates data sharing through repositories like DANDI, G-Node and EBRAINS, and bridges scales from cellular to systems neuroscience.
 \end{abstract}
 
